@@ -19,9 +19,9 @@
 
 <body>
     <header class="header">
-        <div class="container">
-            <nav class="nav">
-                <a class="nav-logo" href="./index.html">Web<span class="nav-span">Studio</span></a>
+        <div class="container header-container">
+            <nav class="header-nav">
+                <a class="nav-logo" href="./index.html">Web<span class="nav-logo-span">Studio</span></a>
                 <ul class="nav-ul">
                     <li class="nav-li"><a class="header-li-link" href="./index.html">Studio</a></li>
                     <li class="nav-li"><a class="header-li-link" href="">Portfolio</a></li>
@@ -29,19 +29,45 @@
                 </ul>
             </nav>
             <address class="address">
-                <ul class="nav-ul">
+                <ul class="address-ul">
                     <li><a class="address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                     <li><a class="address-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
                 </ul>
             </address>
+
+            <!-- Mobile menu -->
+
+            <button class="burger-btn" type="button" data-menu-open>
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-burger"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile-menu is-open" data-menu>
+            <div class="container mobile-menu-container">
+                <button class="mobile-menu-close" data-menu-close><svg class="close-popup-svg" width="8" height="8">
+                        <use href="./images/icons.svg#icon-close-black-18dp"></use>
+                    </svg></button>
+                <nav class="mobile-menu-nav">
+                    <ul class="mobile-menu-ul">
+                        <li class="mobile-nav-li"><a class="header-li-link" href="./index.html">Studio</a></li>
+                        <li class="mobile-nav-li"><a class="header-li-link" href="">Portfolio</a></li>
+                        <li class="mobile-nav-li"><a class="header-li-link" href="">Contacts</a></li>
+                    </ul>
+                </nav>
+                <address>Address</address>
+                <dvi>Soc links</dvi>
+            </div>
         </div>
     </header>
+    <!-- Eno Mobile menu -->
 
     <!-- #endregion header -->
 
-    <!-- #region one -->
+
     <main>
-        <section class="sect-one">
+        <!-- #region one -->
+        <section class="sect-one hidden">
             <div class="container">
                 <h1 class="sect-one-title">Effective Solutions for Your Business</h1>
                 <button type="button" class="sect-one-button">Order Service</button>
@@ -51,7 +77,7 @@
 
         <!-- #region two -->
 
-        <section class="sect-two">
+        <section class="sect-two hidden">
             <div class="container">
                 <h2 class="visually-hidden">Features</h2>
                 <ul class="sect-two-ul">
@@ -111,7 +137,7 @@
         <!-- #endregion two -->
 
         <!-- #region three -->
-        <section class="sect-thr">
+        <section class="sect-thr hidden">
             <div class="container">
                 <h2 class="sect-thr-title">Our Team</h2>
                 <ul class="sect-thr-ul">
@@ -222,7 +248,7 @@
 
         <!-- #region-four -->
 
-        <section class="sect-four">
+        <section class="sect-four hidden">
             <div class="container">
                 <h2 class="sect-thr-title">Our Portfolio</h2>
                 <ul class="sect-four-ul">
@@ -305,11 +331,12 @@
                 </ul>
             </div>
         </section>
+        <!-- #endregion four -->
+
     </main>
-    <!-- #endregion four -->
 
     <!-- #region footer -->
-    <footer class="footer">
+    <footer class="footer hidden">
         <div class="container footer-container">
             <div class="footer-div-second"><a class="footer-nav-logo" href="./index.html">Web<span
                         class="footer-span">Studio</span></a>
@@ -359,7 +386,7 @@
     <!-- #endregion footer -->
 
     <!-- #region modal -->
-    <div class="backdrop">
+    <div class="backdrop hidden">
         <div class="popup-review">
             <button class="close-popup" type="button">
                 <svg class="close-popup-svg" width="8" height="8">
@@ -422,6 +449,8 @@
     </div>
 
     <!-- #endregion modal -->
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
