@@ -35,10 +35,6 @@ p {
     margin: 0;
 }
 
-a {
-    text-decoration: none;
-}
-
 ul {
     padding-left: 0;
     margin: 0;
@@ -105,6 +101,10 @@ button {
     display: none;
 }
 
+.address {
+    font-style: normal;
+}
+
 .address-ul {
     display: none;
 }
@@ -133,6 +133,122 @@ button {
 .burger-icon {
     display: block;
     fill: #2f2f37;
+}
+
+.mobile-menu-nav {
+    margin-bottom: auto;
+    height: 200px;
+}
+
+.mobile-nav-ul {
+    margin: 0;
+    padding: 0;
+
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    gap: 40px;
+}
+
+.mobile-li-link {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    display: block;
+    position: relative;
+    color: #2e2f42;
+}
+
+.mobile-li-link:hover,
+.mobile-li-link:focus {
+    color: #404bbf;
+
+}
+
+.mobile-address-div {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.mobile-address {
+    font-style: normal;
+    height: 72px;
+}
+
+.mobile-address-ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.mobile-address-link {
+    color: var(--slate);
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+}
+
+.mobile-address-li:nth-child(1) .mobile-address-link {
+    color: var(--ocean);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mobile-address-link:hover,
+.mobile-address-link:focus {
+    color: var(--iris);
+
+}
+
+.mobile-address-ul:last-child {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    letter-spacing: 0.02em;
+    color: var(--slate);
+}
+
+.mobile-soc-div {
+    margin: 48px 24px 40px 16px;
+}
+
+.sect-thr-soc {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sect-thr-soc-li {
+    width: 40px;
+    height: 40px;
+}
+
+.soc-link {
+    width: 100%;
+    height: 100%;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.soc-link:hover,
+.soc-link:focus {
+    background-color: #404bbf;
+}
+
+.sect-thr-icon {
+    fill: #f4f4fd;
 }
 
 @media screen and (min-width: 768px) {
@@ -205,10 +321,7 @@ button {
         letter-spacing: 0.04em;
         color: var(--slate);
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
         font-family: var(--font-family);
-
-
     }
 
     .address-link:hover,
@@ -281,17 +394,60 @@ button {
     background-color: #e7e9fc;
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 0;
-    cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.mobile-menu-nav {
-    margin-bottom: auto;
 }
 
 @media screen and (min-width: 768px) {
     .mobile-menu {
         display: none;
     }
+}
+
+/* #region one */
+.sect-one {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/01-dark-mob-1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 188px 0;
+    max-width: 767px;
+    margin: 0 auto;
+}
+
+.sect-one-title {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 111%;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: var(--white);
+    margin: 72px 52px;
+}
+
+.sect-one-button {
+    display: block;
+    min-width: 169px;
+    border: none;
+    margin: 0 auto;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0.04em;
+    color: var(--white);
+    border-radius: 4px;
+    width: 169px;
+    height: 56px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: var(--iris);
+    align-items: center;
+    padding: 16px 32px;
+}
+
+.sect-one-button:hover,
+.sect-one-button:focus {
+    background-color: #404BBF;
 }
