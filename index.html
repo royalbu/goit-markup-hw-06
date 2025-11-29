@@ -21,7 +21,7 @@
     <header class="header">
         <div class="container header-container">
             <nav class="header-nav">
-                <a class="nav-logo" href="./index.html">Web<span class="nav-logo-span">Studio</span></a>
+                <a class="nav-logo" href="./index.html">WEB<span class="nav-logo-span">STUDIO</span></a>
                 <ul class="nav-ul">
                     <li class="nav-li"><a class="header-li-link" href="./index.html">Studio</a></li>
                     <li class="nav-li"><a class="header-li-link" href="">Portfolio</a></li>
@@ -110,7 +110,7 @@
 
         <!-- #region two -->
 
-        <section class="sect-two hidden">
+        <section class="sect-two">
             <div class="container">
                 <h2 class="visually-hidden">Features</h2>
                 <ul class="sect-two-ul">
@@ -170,12 +170,29 @@
         <!-- #endregion two -->
 
         <!-- #region three -->
-        <section class="sect-thr hidden">
+        <section class="sect-thr">
             <div class="container">
                 <h2 class="sect-thr-title">Our Team</h2>
                 <ul class="sect-thr-ul">
+
+                    <!-- 1 — Mark Guerrero -->
                     <li class="sect-thr-li">
-                        <img src="./images/1_mark_guerrero.jpg" alt="Mark Guerrero's Photo" width="264">
+                        <picture>
+                            <source media="(min-width: 1158px)" srcset="
+                                ./images/02-mark-comp-1x.jpg 1x,
+                                ./images/02-mark-comp-2x.jpg 2x
+                            ">
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/02-mark-tab-1x.jpg 1x,
+                                ./images/02-mark-tab-2x.jpg 2x
+                            ">
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/02-mark-mob-1x.jpg 1x,
+                                ./images/02-mark-mob-2x.jpg 2x
+                            ">
+                            <img src="./images/02-mark-mob-1x" alt="Mark Guerrero's Photo" width="264" height="260">
+                        </picture>
+
                         <div class="sect-thr-li-div">
                             <h3 class="sect-thr-sub">Mark Guerrero</h3>
                             <p class="sect-thr-p">Product Designer</p>
@@ -199,8 +216,25 @@
                             </ul>
                         </div>
                     </li>
+
+                    <!-- 2 — Tom Ford -->
                     <li class="sect-thr-li">
-                        <img src="./images/2_tom_ford.jpg" alt="Tom Ford's Photo" width="264">
+                        <picture>
+                            <source media="(min-width: 1158px)" srcset="
+                                ./images/03-ford-comp-1x.jpg 1x,
+                                ./images/03-ford-comp-2x.jpg 2x
+                            ">
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/03-ford-tab-1x.jpg 1x,
+                                ./images/03-ford-tab-2x.jpg 2x
+                            ">
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/03-ford-mob-1x.jpg 1x,
+                                ./images/03-ford-mob-2x.jpg 2x
+                            ">
+                            <img src="./images/03-ford-mob-1x.jpg" alt="Tom Ford's Photo" width="264" height="260">
+                        </picture>
+
                         <div class="sect-thr-li-div">
                             <h3 class="sect-thr-sub">Tom Ford</h3>
                             <p class="sect-thr-p">Frontend Developer</p>
@@ -224,8 +258,25 @@
                             </ul>
                         </div>
                     </li>
+
+                    <!-- 3 — Camila Garcia -->
                     <li class="sect-thr-li">
-                        <img src="./images/3_camila_garcia.jpg" alt="Camila Garcia's Photo" width="264">
+                        <picture>
+                            <source media="(min-width: 1158px)" srcset="
+                                ./images/04-garc-comp-1x.jpg 1x,
+                                ./images/04-garc-comp-2x.jpg 2x
+                            ">
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/04-garc-tab-1x.jpg 1x,
+                                ./images/04-garc-tab-2x.jpg 2x
+                            ">
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/04-garc-mob-1x.jpg 1x,
+                                ./images/04-garc-mob-2x.jpg 2x
+                            ">
+                            <img src="./images/04-garc-mob-1x.jpg" alt="Camila Garcia's Photo" width="264" height="260">
+                        </picture>
+
                         <div class="sect-thr-li-div">
                             <h3 class="sect-thr-sub">Camila Garcia</h3>
                             <p class="sect-thr-p">Marketing</p>
@@ -249,8 +300,26 @@
                             </ul>
                         </div>
                     </li>
+
+                    <!-- 4 — Daniel Wilson -->
                     <li class="sect-thr-li">
-                        <img src="./images/4_daniel_wilson.jpg" alt="Daniel Wilsons' Photo" width="264">
+                        <picture>
+                            <source media="(min-width: 1158px)" srcset="
+                                ./images/05-wils-comp-1x.jpg 1x,
+                                ./images/05-wils-comp-2x.jpg 2x
+                            ">
+                            <source media="(min-width: 768px)" srcset="
+                                ./images/05-wils-tab-1x.jpg 1x,
+                                ./images/05-wils-tab-2x.jpg 2x
+                            ">
+                            <source media="(max-width: 767px)" srcset="
+                                ./images/05-wils-mob-1x.jpg 1x,
+                                ./images/05-wils-mob-2x.jpg 2x
+                            ">
+                            <img src="./images/05-wils-mob-@1x.jpg" alt="Daniel Wilson's Photo" width="264"
+                                height="260">
+                        </picture>
+
                         <div class="sect-thr-li-div">
                             <h3 class="sect-thr-sub">Daniel Wilson</h3>
                             <p class="sect-thr-p">UI Designer</p>
@@ -274,14 +343,16 @@
                             </ul>
                         </div>
                     </li>
+
                 </ul>
             </div>
         </section>
+
         <!-- #endregion-three -->
 
         <!-- #region-four -->
 
-        <section class="sect-four hidden">
+        <section class="sect-four">
             <div class="container">
                 <h2 class="sect-thr-title">Our Portfolio</h2>
                 <ul class="sect-four-ul">
@@ -294,7 +365,7 @@
                         </div>
                         <div class="sect-four-div">
                             <h3 class="sect-four-sub">Banking App</h3>
-                            <p class="sect-two-p">App</p>
+                            <p class="sect-four-p">App</p>
                         </div>
                     </li>
                     <li class="sect-four-li">
@@ -307,7 +378,7 @@
                         </div>
                         <div class="sect-four-div">
                             <h3 class="sect-four-sub">Cashless Payment</h3>
-                            <p class="sect-two-p">Marketing</p>
+                            <p class="sect-four-p">Marketing</p>
                         </div>
 
                     </li>
@@ -320,7 +391,7 @@
                         </div>
                         <div class="sect-four-div">
                             <h3 class="sect-four-sub">Meditation App</h3>
-                            <p class="sect-two-p">App</p>
+                            <p class="sect-four-p">App</p>
                         </div>
                     </li>
                     <li class="sect-four-li">
@@ -332,7 +403,7 @@
                         </div>
                         <div class="sect-four-div">
                             <h3 class="sect-four-sub">Taxi Service</h3>
-                            <p class="sect-two-p">Marketing</p>
+                            <p class="sect-four-p">Marketing</p>
                         </div>
                     </li>
                     <li class="sect-four-li">
@@ -345,7 +416,7 @@
                         </div>
                         <div class="sect-four-div">
                             <h3 class="sect-four-sub">Screen Illustrations</h3>
-                            <p class="sect-two-p">Design</p>
+                            <p class="sect-four-p">Design</p>
                         </div>
                     </li>
                     <li class="sect-four-li">
@@ -358,7 +429,7 @@
                         </div>
                         <div class="sect-four-div">
                             <h3 class="sect-four-sub">Online Courses</h3>
-                            <p class="sect-two-p">Marketing</p>
+                            <p class="sect-four-p">Marketing</p>
                         </div>
                     </li>
                 </ul>
@@ -369,10 +440,10 @@
     </main>
 
     <!-- #region footer -->
-    <footer class="footer hidden">
+    <footer class="footer">
         <div class="container footer-container">
-            <div class="footer-div-second"><a class="footer-nav-logo" href="./index.html">Web<span
-                        class="footer-span">Studio</span></a>
+            <div class="footer-div-second"><a class="footer-nav-logo" href="./index.html">WEB<span
+                        class="footer-span">STUDIO</span></a>
                 <p class="footer-p">Increase the flow of customers and sales for your business with digital
                     marketing &
                     growth
