@@ -408,10 +408,13 @@ button {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    padding: 188px 0;
-    max-width: 767px;
+    padding-top: 72px;
+    padding-bottom: 72px;
+    min-width: 320px;
     margin: 0 auto;
+    text-align: center;
 }
+
 
 @media (min-resolution: 192dpi) {
     .sect-one {
@@ -465,7 +468,8 @@ button {
     letter-spacing: 0.02em;
     text-align: center;
     color: var(--white);
-    margin: 72px 52px;
+    max-width: 216px;
+    margin: 0 auto;
 }
 
 
@@ -499,6 +503,7 @@ button {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: var(--iris);
     align-items: center;
+    margin-top: 72px;
 }
 
 .sect-one-button:hover,
