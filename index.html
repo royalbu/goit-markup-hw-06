@@ -407,7 +407,7 @@
                                     srcset="./images/08-medi-tab-1x.jpg 1x, ./images/08-medi-tab-2x.jpg 2x">
                                 <source media="(max-width: 767px)"
                                     srcset="./images/08-medi-mob-1x.jpg 1x, ./images/08-medi-mob-2x.jpg 2x">
-                                <img src="./images/08-medi-mob-1x.jpg.jpg" alt="Meditation App" width="360">
+                                <img src="./images/08-medi-mob-1x.jpg." alt="Meditation App" width="360">
                             </picture>
                             <p class="sect-four-p-hidden">14 Stylish and User-Friendly App Design Concepts ·
                                 Task
@@ -540,7 +540,9 @@
     <!-- #endregion footer -->
 
     <!-- #region modal -->
-    <div class="backdrop" data-modal>
+
+    <!-- #region modal -->
+    <div class="backdrop is-hidden" data-modal>
         <div class="popup-review">
             <button class="close-popup" type="button" data-modal-close>
                 <svg class="close-popup-svg" width="8" height="8">
@@ -549,7 +551,6 @@
             </button>
 
             <p class="modal-title">Leave your contacts and we will call you back</p>
-
 
             <form>
                 <div class="form-field-wrapper">
@@ -561,6 +562,7 @@
                         </svg>
                     </div>
                 </div>
+
                 <div class="form-field-wrapper">
                     <label class="label-field" for="user-phone">Phone</label>
                     <div class="field-input-svg">
@@ -570,6 +572,7 @@
                         </svg>
                     </div>
                 </div>
+
                 <div class="form-field-wrapper">
                     <label class="label-field" for="user-email">Email</label>
                     <div class="field-input-svg">
@@ -579,11 +582,13 @@
                         </svg>
                     </div>
                 </div>
+
                 <div class="form-field-wrapper-comment">
                     <label class="label-field" for="user-comment">Comment</label>
                     <textarea class="comment-textarea" name="user-comment" id="user-comment"
                         placeholder="Text input"></textarea>
                 </div>
+
                 <div class="form-field-wrapper-checkbox">
                     <input class="user-privacy visually-hidden" type="checkbox" id="user-privacy" name="user-privacy"
                         value="true">
@@ -593,17 +598,18 @@
                                 <use href="./images/icons.svg#icon-checkbox"></use>
                             </svg>
                         </span>
-
                         I accept the terms and conditions of the <a class="label-link" href="#">Privacy
-                            Policy</a></label>
+                            Policy</a>
+                    </label>
                 </div>
+
                 <button type="button" class="button-send">Send</button>
             </form>
-
         </div>
     </div>
-
     <!-- #endregion modal -->
+
+
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
