@@ -1066,7 +1066,7 @@ button {
         padding-bottom: 100px;
         align-items: baseline;
         flex-wrap: nowrap;
-
+        column-gap: 0;
     }
 
     .footer-p {
@@ -1105,11 +1105,11 @@ button {
     }
 
     .footer-div-second {
-        margin-right: 100px;
+        margin-right: 120px;
     }
 
     .footer-div-soc {
-        margin-right: 50px;
+        margin-right: 80px;
     }
 
     .footer-p-soc {
