@@ -1105,7 +1105,11 @@ button {
     }
 
     .footer-div-second {
-        margin-right: 120px;
+        margin-right: 100px;
+    }
+
+    .footer-div-soc {
+        margin-right: 50px;
     }
 
     .footer-p-soc {
